@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void button_click(View view){
+    public void goto_todolist(View view){
         Intent intent = new Intent(this, TodoActivity.class);
         startActivity(intent);
     }
