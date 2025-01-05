@@ -26,6 +26,23 @@
         android:layout_marginTop="132dp"
         android:text="hello world!"
         android:textSize="24sp"
+        android:text="生活小助手"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.047"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <Button
+        android:id="@+id/gotoAccounting"
+        android:layout_width="133dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="140dp"
+        android:onClick="goto_accounting"
+        android:text="日常記帳"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

@@ -28,4 +28,9 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, TodoActivity.class);
         startActivity(intent);
     }
+    
+    public void goto_accounting(View view) {
+        Intent intent = new Intent(this, AccountingActivity.class);
+        startActivity(intent);
+    }
 }
