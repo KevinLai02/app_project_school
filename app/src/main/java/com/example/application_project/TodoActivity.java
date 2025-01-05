@@ -21,7 +21,7 @@ import java.util.ArrayList;
 
 public class TodoActivity extends AppCompatActivity {
 
-    private ArrayList<String> taskList = new ArrayList<>(); // 儲存f待辦事項
+    private ArrayList<String> taskList = new ArrayList<>();
     private ArrayAdapter<String> adapter;
 
     @Override
@@ -47,11 +47,11 @@ public class TodoActivity extends AppCompatActivity {
         buttonAddTask.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String task = editTextTask.getText().toString(); // 取得輸入文字
+                String task = editTextTask.getText().toString();
                 if (!task.isEmpty()) {
-                    taskList.add(task);                // 新增到待辦清單
-                    adapter.notifyDataSetChanged();    // 通知 ListView 資料已改變
-                    editTextTask.setText("");          // 清空輸入框
+                    taskList.add(task);
+                    adapter.notifyDataSetChanged();
+                    editTextTask.setText("");
                 }
             }
         });
@@ -60,9 +60,8 @@ public class TodoActivity extends AppCompatActivity {
         listViewTasks.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
-                // 彈出確認刪除對話框
                 showDeleteDialog(position);
-                return true; // 表示長按事件已處理，不再觸發點擊事件
+                return true;
             }
         });
     }
@@ -75,15 +74,15 @@ public class TodoActivity extends AppCompatActivity {
         builder.setPositiveButton("刪除", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                taskList.remove(position);            // 刪除選定的項目
-                adapter.notifyDataSetChanged();       // 通知適配器更新資料
+                taskList.remove(position);
+                adapter.notifyDataSetChanged();
             }
         });
-        builder.setNegativeButton("取消", null); // 點擊取消時不執行任何操作
-        builder.show(); // 顯示對話框
+        builder.setNegativeButton("取消", null);
+        builder.show();
     }
 
-    // 切換回主畫面的按鈕
+
     public void button2_click(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
