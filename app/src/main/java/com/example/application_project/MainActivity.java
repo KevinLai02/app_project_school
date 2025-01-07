@@ -33,4 +33,14 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, AccountingActivity.class);
         startActivity(intent);
     }
+
+    public void goto_qrcode_generator(View view) {
+        Intent intent = new Intent(this, QRCodeGeneratorActivity.class);
+        startActivity(intent);
+    }
+
+    public void goto_qrcode_loader(View view) {
+        Intent intent = new Intent(this, QuotesGeneratorActivity.class);
+        startActivity(intent);
+    }
 }
