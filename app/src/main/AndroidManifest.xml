@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Application_project"
         tools:targetApi="31">
         <activity
+            android:name=".ColorChangeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ColorFlipperActivity"
+            android:exported="false" />
+        <activity
             android:name=".AccountingActivity"
             android:exported="false" />
         <activity

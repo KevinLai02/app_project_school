@@ -8,6 +8,17 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/gotoColorFlipper"
+        android:layout_width="133dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="36dp"
+        android:onClick="goto_colorflipper"
+        android:text="ColorFlipper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
         android:id="@+id/button"
         android:layout_width="133dp"
         android:layout_height="60dp"

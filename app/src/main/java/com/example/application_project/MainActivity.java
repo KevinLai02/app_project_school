@@ -33,4 +33,8 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, AccountingActivity.class);
         startActivity(intent);
     }
+    public void goto_colorflipper(View view){
+        Intent intent = new Intent(this, ColorFlipperActivity.class);
+        startActivity(intent);
+    }
 }
