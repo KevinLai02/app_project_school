@@ -20,7 +20,7 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="133dp"
+        android:layout_width="150dp"
         android:layout_height="60dp"
         android:layout_marginTop="36dp"
         android:onClick="goto_todolist"
@@ -42,13 +42,35 @@
 
     <Button
         android:id="@+id/gotoAccounting"
-        android:layout_width="133dp"
-        android:layout_height="62dp"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
         android:layout_marginTop="168dp"
         android:onClick="goto_accounting"
         android:text="日常記帳"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/goto_qrcode_generator"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="36dp"
+        android:onClick="goto_qrcode_generator"
+        android:text="QRCode生產器"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <Button
+        android:id="@+id/goto_qrcode_loader"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="136dp"
+        android:onClick="goto_qrcode_loader"
+        android:text="語錄生產器"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

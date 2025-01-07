@@ -6,4 +6,13 @@
         <item>Nature</item>
         <item>Calming</item>
     </string-array>
+    <string name="public_return_button_text">返回</string>
+    <string name="qrcode_generator_empty_content">請輸入QR Code內容!</string>
+    <string name="qrcode_generator_tips">長按圖片可保存QR Code</string>
+    <string name="qrcode_generator_secret_key_tips">長按可保存金鑰</string>
+    <string name="qrcode_generator_generate_secret_key_button_text">產生金鑰</string>
+    <string name="qrcode_generator_clear_secret_key_button_text">清除金鑰</string>
+    <string name="qrcode_generator_content_input_hint">輸入你的QR Code內容</string>
+    <string name="quotes_generator_generate_button_text">生產語錄</string>
+    <string name="quotes_generator_content_input_hint">你最近的想法或是心情?</string>
 </resources>
