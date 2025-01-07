@@ -1,6 +1,6 @@
 ## app_project  
 ### 系統架構圖:  
-![_- visual selection (2)](https://github.com/user-attachments/assets/8837d834-d9e9-49a6-8d45-498d4d4bab76)
+![app-feature](https://github.com/user-attachments/assets/04212417-d1bd-404d-ac00-e6e2fedb83f0)
 
 本專案旨在開發一款多功能生活助手APP，整合記帳、待辦事項管理、顏色隨機生成、QR Code產生及隨機語錄等五大功能，目的是在於提升用戶在日常生活中的效率和便利性。  
   
