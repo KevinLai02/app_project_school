@@ -72,4 +72,8 @@ public class ColorFlipperActivity extends AppCompatActivity {
         intent.putExtra("order", selectedOrder);
         startActivity(intent);
     }
+
+    public void go_back(View view) {
+        finish();
+    }
 }
