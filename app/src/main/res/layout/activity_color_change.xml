@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- 顯示顏色變換的區域 -->
+    <TextView
+        android:id="@+id/textViewInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap the screen to start color flipping!"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"
+        android:textAlignment="center"
+        android:padding="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:textColor="@android:color/black"/>
+
+    <!-- 用戶點擊區域來開始顏色變換 -->
+    <FrameLayout
+        android:id="@+id/colorDisplayArea"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FFFFFF"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <!-- 返回按鈕 -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:onClick="go_back"
+        android:text="Back" />
+</LinearLayout>

@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Application_project</string>
+    <string-array name="color_scenes">
+        <item>Rainbow</item>
+        <item>Gradient</item>
+        <item>Nature</item>
+        <item>Calming</item>
+    </string-array>
 </resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ColorFlipperActivity">
+
+    <!-- 顯示顏色模式選擇的標題 -->
+    <TextView
+        android:id="@+id/tvChooseMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose a Color Mode"
+        android:textSize="20sp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- 顏色模式選擇按鈕：彩虹模式 -->
+    <Button
+        android:id="@+id/btnRainbow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rainbow"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/tvChooseMode"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:onClick="onColorModeSelected"/>
+
+    <!-- 顏色模式選擇按鈕：漸變模式 -->
+    <Button
+        android:id="@+id/btnGradient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="onColorModeSelected"
+        android:text="Relex"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnRainbow" />
+
+    <!-- 顏色模式選擇按鈕：使用場景 -->
+    <Button
+        android:id="@+id/btnScenes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scenes"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/btnGradient"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:onClick="onColorModeSelected"/>
+
+    <!-- 顏色排列選擇：隨機排列或依序顯示 -->
+    <RadioGroup
+        android:id="@+id/radioGroupOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/btnScenes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp">
+
+        <RadioButton
+            android:id="@+id/rbSequential"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sequential"
+            android:textSize="16sp"/>
+
+        <RadioButton
+            android:id="@+id/rbRandom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Random"
+            android:textSize="16sp"/>
+    </RadioGroup>
+
+    <!-- 跳轉按鈕：開始顏色變換 -->
+    <Button
+        android:id="@+id/btnStartColorChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Color Change"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/radioGroupOrder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:onClick="onStartColorChange"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
